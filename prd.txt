@@ -1,0 +1,49 @@
+PRODUCT REQUIREMENTS DOCUMENT - PRD
+
+1. Project Overview:
+	This project will be a 'for-printing-shop' kind of a system. Basically a backend application that helps a printing shop manage transactions. It allows students or clients to submit printing orders, calculates the total cost automatically that will be based on the number of pages printed and what type of layout (paper sizes and whatnot). Orders will be stored for retrieval (seller can retrieve all past store transaction). The system will provide a simple API for order creation, retrieval, and management.
+
+2. Problem Statement:
+	The usual/traditional way of handling printing orders are mostly done manually. This usually leads to errors in calculation, being slow in processing, and can cause difficulties in tracking past orders. Students and clients may have to wait in line or keep physical receipts as proof. There is a need for a digital  system that will show orders realtime, automatically calculates costs, and maintains an organized record of all printing transactions.
+
+3. Objectives: 
+	- Provide a digital platform for submitting printing orders.
+	- Automatically calculates the total cost per order.
+	- Allow retrieval  of all orders or a specific order.
+	- Store order details for record-keeping and reporting.
+	- Improve efficiency and reduce errors in the printing process.
+
+4. Users:
+	* Students/Clients - Submit printing orders and view their order details.
+	* Printing Shop Operator/Admin - Manage and process orders, verify payments, and tracks past orders.
+
+5. Functional Requirements:
+	- Create a new printing order with student name, document name, pages, print type, and total cost.
+	- Retrieve all printing orders.
+	- Retrieve a specific oder by ID.
+	- Automatically calculate total cost based on pages and print type.
+
+6. Non-Functional Requirements:
+	Performance:
+		- API should respond within 1-2 seconds for normal load. 
+	Usability:
+		- API must be accessible via REST clients like the Swagger UI.
+	Scalability:
+		- Should be able to handle multiple order requests simultaneously.
+	Constraints:
+		- System must be developed using Python, FastAPI, and Uvicorn.
+		- Data will be stored in a local database or lightweight storage.
+
+7. Data Model
+	Order Information:
+		- order_id: Unique identifier for each order.
+		- student_name: Name of the student submitting the order.
+		- document_name: Name of the file to be printed.
+		- pages: Number of pages in the document.
+		- print_type: Type of printing (e.g., Black & White, Colored).
+		- total_cost: Calculated total price for the order.
+
+8. Proposed API Endpoints
+	- POST /orders : Create a new printing order.
+	- GET /orders : Retrieve all printing orders.
+	- GET /orders/{id} : Retrieve a specific order by ID. 
