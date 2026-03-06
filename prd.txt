@@ -1,3 +1,6 @@
+PS&T System - Printing Service & Transaction System
+https://github.com/ace9264-dev/AppDevFastAPI
+
 PRODUCT REQUIREMENTS DOCUMENT - PRD
 
 1. Project Overview:
