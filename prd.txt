@@ -1,6 +1,8 @@
 PS&T System - Printing Service & Transaction System
 https://github.com/ace9264-dev/AppDevFastAPI
 
+Written with GNU nano
+
 PRODUCT REQUIREMENTS DOCUMENT - PRD
 
 1. Project Overview:
